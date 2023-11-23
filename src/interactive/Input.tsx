@@ -20,7 +20,7 @@ export default function Input(
         <div className="w-full">
             {label && <div className="text-sm mb-2 text-gray-500">{label}</div>}
             <div
-                className="bg-secondary border border-secondaryActive ripple rounded-xl overflow-hidden flex items-stretch"
+                className="bg-secondary border border-secondaryActive rounded-xl overflow-hidden flex items-stretch"
             >
                 {props.left && <div className="bg-secondaryActive border-r border-r-secondaryActive px-4 flex justify-center items-center">{props.left}</div>}
                 <input

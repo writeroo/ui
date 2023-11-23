@@ -23,7 +23,7 @@ export default function Drawer(props: DrawerProps) {
                 className="flex-1"
                 onClick={onClose}
             />
-            <div className={`shrink-0 max-h-[90%] flex flex-col bg-secondary rounded-t-[30px] transition-all ${open ? "translate-y-0" : "translate-y-full"}`}>
+            <div className={`shrink-0 max-h-[90%] flex flex-col pb-[var(--safe-area-inset-bottom)] bg-secondary rounded-t-[30px] transition-all ${open ? "translate-y-0" : "translate-y-full"}`}>
                 <div className="p-4 flex items-center justify-center shrink-0">
                     <div
                         className="w-20 h-1 bg-primaryLightfont rounded-lg"

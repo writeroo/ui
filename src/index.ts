@@ -1,7 +1,6 @@
 import './index.css';
 import './css/fallback.css'
 import './css/page.css'
-import './assets/fonts/manrope-variable.ttf'
 import Input from './interactive/Input';
 import ThemeProvider from './providers/ThemeProvider';
 import { InputProps } from './interactive/Input';
@@ -37,6 +36,10 @@ import Drawer from './layout/Drawer';
 import { DrawerProps, WarningDrawer, WarningDrawerProps } from './layout/Drawer';
 import Button from './interactive/buttons/Button';
 import { ButtonProps } from './interactive/buttons/Button';
+import { RawPage, RawPageProps } from './layout/Page';
+import Router from './providers/RouterProvider'
+import { RouterProps } from './providers/RouterProvider';
+import * as raviger from 'raviger';
 export {
     Input,
     ThemeProvider,
@@ -56,7 +59,10 @@ export {
     Menu,
     Drawer,
     Button,
-    WarningDrawer
+    WarningDrawer,
+    RawPage,
+    Router,
+    raviger
 };
 export type {
     InputProps,
@@ -78,5 +84,7 @@ export type {
     MenuOption,
     DrawerProps,
     ButtonProps,
-    WarningDrawerProps
+    WarningDrawerProps,
+    RawPageProps,
+    RouterProps
 };

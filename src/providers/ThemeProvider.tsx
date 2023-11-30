@@ -1,7 +1,6 @@
 import { useEffect } from "react";
 import { Themes, setTheme, useThemeDetector } from "../utils/themes";
 import { Theme } from "../types/themes";
-import Manrope from '../assets/fonts/manrope-variable.ttf'
 
 export type ThemeProviderProps = {
     children: React.ReactNode;
@@ -38,8 +37,6 @@ export default function ThemeProvider(props: ThemeProviderProps) {
     }, [theme]);
 
     useEffect(() => {
-
-        document.documentElement.style.setProperty(`--kui-font`, `url(${Manrope})`);
 
         if (accent)
             Object.keys(accent).forEach((key) => {

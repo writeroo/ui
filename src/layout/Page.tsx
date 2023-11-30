@@ -1,6 +1,11 @@
 import { twMerge } from "tailwind-merge";
 import PageHeader, { PageHeaderProps } from "./PrimaryPageHeader";
 
+export type RawPageProps = {
+    children: React.ReactNode;
+    className?: string;
+}
+
 export type PageProps = {
     children: React.ReactNode;
     type?: "sticky" | "fixed";
@@ -36,4 +41,14 @@ export default function Page(props: PageProps) {
             </div>
         </div>
     );
+}
+
+export function RawPage(props: RawPageProps) {
+
+    const { className, children } = props;
+    return (
+        <div className={twMerge("h-screen bg-primary text-primaryFont pt-[var(--status-bar-height,0)] pb-[var(--safe-area-inset-bottom)]", className)}>
+            {children}
+        </div>
+    )
 }
